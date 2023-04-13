@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdq-tX-dpM">
+                                <rect key="frame" x="47" y="193" width="281" height="281"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="8he-BN-MGM">
+                                        <rect key="frame" x="262" y="126.5" width="28" height="28"/>
+                                        <color key="tintColor" red="0.069701440559999994" green="0.069701440559999994" blue="0.069701440559999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8he-BN-MGM" secondAttribute="height" id="MER-XW-RRx"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8he-BN-MGM" secondAttribute="centerX" constant="5" id="5BT-lb-gGs"/>
+                                    <constraint firstAttribute="width" secondItem="sdq-tX-dpM" secondAttribute="height" id="AHB-dV-KzE"/>
+                                    <constraint firstItem="8he-BN-MGM" firstAttribute="centerY" secondItem="sdq-tX-dpM" secondAttribute="centerY" id="c8e-ml-oRD"/>
+                                    <constraint firstItem="8he-BN-MGM" firstAttribute="height" secondItem="sdq-tX-dpM" secondAttribute="height" multiplier="0.1" id="elm-Oz-doQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sdq-tX-dpM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Dwm-qe-Vi9"/>
+                            <constraint firstItem="sdq-tX-dpM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.75" id="s5V-EA-iq2"/>
+                            <constraint firstItem="sdq-tX-dpM" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="wEM-YC-Sa4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="triangle" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
