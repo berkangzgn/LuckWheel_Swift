@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Luck WheelVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="LuckWheelVC" customModule="LuckWheel_Swift" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,15 +36,30 @@
                                     <constraint firstItem="8he-BN-MGM" firstAttribute="height" secondItem="sdq-tX-dpM" secondAttribute="height" multiplier="0.1" id="elm-Oz-doQ"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtn-wq-I49">
+                                <rect key="frame" x="47" y="607" width="281" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="turnBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hQ2-F6-yBG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sdq-tX-dpM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Dwm-qe-Vi9"/>
+                            <constraint firstItem="xtn-wq-I49" firstAttribute="centerX" secondItem="sdq-tX-dpM" secondAttribute="centerX" id="Iph-Oe-5pX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xtn-wq-I49" secondAttribute="bottom" constant="25" id="RFj-ww-Gj4"/>
+                            <constraint firstItem="xtn-wq-I49" firstAttribute="width" secondItem="sdq-tX-dpM" secondAttribute="width" id="dTz-YD-cAS"/>
                             <constraint firstItem="sdq-tX-dpM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.75" id="s5V-EA-iq2"/>
                             <constraint firstItem="sdq-tX-dpM" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="wEM-YC-Sa4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="turnBtn" destination="xtn-wq-I49" id="EIg-aw-1x5"/>
+                        <outlet property="wheelV" destination="sdq-tX-dpM" id="ZTA-Yr-n2q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
