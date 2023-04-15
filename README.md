@@ -37,3 +37,6 @@ Berkan Gezgin
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+<br />
+The development process is still ongoing. I'm open to your suggestions and help in the places you see missing.  :)
