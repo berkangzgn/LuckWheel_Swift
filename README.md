@@ -10,7 +10,7 @@ Luck wheel library built using Swift supports dynamic content.
 
 ## CocoaPods Installation
 
-FortuneWheel is available through [CocoaPods](https://cocoapods.org). To install
+LuckyWheel_Swift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -21,10 +21,10 @@ pod 'LuckWheel_Swift'
 
 ## Swift Package Manager
 
+If you're using Xcode 11 or later, go to File / Swift Packages / Add Package Dependency... and type the url at the bottom
+
 ```swift
-dependencies: [
-    .package(url: "https://github.com/berkangzgn/LuckWheel_Swift", .upToNextMajor(from: "1.0.0"))
-]
+"https://github.com/berkangzgn/LuckWheel_Swift"
 ```
 
 <br />
